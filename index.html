@@ -3,83 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>アプリ名 - サポートページ</title>
+  <title>BookMarker - サポートページ</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-      background: #f7f8fa;
-      margin: 0;
-      padding: 2rem;
-      color: #333;
-      display: flex;
-      justify-content: center;
-    }
-    .container {
-      max-width: 900px;
-      width: 100%;
-    }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 6px 18px rgba(15,20,25,0.06);
-      padding: 2rem;
-      border: 1px solid #eee;
-    }
-    h1 { margin: 0 0 1rem 0; font-size: 1.6rem; color: #111; }
-    h2 {
-      margin-top: 1.8rem;
-      margin-bottom: 0.6rem;
-      font-size: 1.2rem;
-      border-left: 4px solid #0070f3;
-      padding-left: 0.6rem;
-      color: #111;
-    }
-    p { margin: 0 0 0.8rem 0; line-height: 1.7; }
-    iframe {
-      width: 100%;
-      height: 680px; /* 必要に応じて調整 */
-      border: 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(15,20,25,0.04);
-      background: white;
-    }
-    .note { margin-top: 1rem; font-size: 0.9rem; color: #666; }
-    footer { text-align: center; margin-top: 1.6rem; font-size: 0.85rem; color: #888; }
-    @media (max-width:640px) {
-      .card { padding: 1rem; }
-      iframe { height: 720px; }
-    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; background: #fafafa; }
+    h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.6rem; }
+    footer { margin-top: 2rem; font-size: 0.8rem; text-align: center; color: #777; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <h1>アプリ名 サポートページ</h1>
+  <h1>BookMarker サポートページ</h1>
 
-      <h2>プライバシーポリシー</h2>
-      <p>ここにプライバシーポリシーの本文を入れてください。App Store 登録時にはこのページの URL を指定します。</p>
+  <ul>
+    <li><a href="privacy.html">プライバシーポリシー</a></li>
+    <li><a href="terms.html">利用規約</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
+  </ul>
 
-      <h2>利用規約</h2>
-      <p>ここに利用規約（簡単な利用上の注意や連絡先など）を記載してください。</p>
+  <h2 id="contact">お問い合わせ</h2>
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLScEVdW2UyVRsUVZujc6VX1dMWQKcCkhNd6_gPwmoF8bpRy9bA/viewform?usp=header"
+    width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+    読み込んでいます…
+  </iframe>
 
-      <h2>お問い合わせ</h2>
-
-      <!-- ↓ ここに Google フォームの埋め込み URL を入れてください ↓ -->
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScEVdW2UyVRsUVZujc6VX1dMWQKcCkhNd6_gPwmoF8bpRy9bA/viewform?usp=header"
-        title="お問い合わせフォーム"
-        loading="lazy"
-      >
-        読み込んでいます…
-      </iframe>
-
-      <p class="note">
-        フォームが表示されない場合は、ここをクリックしてフォームを開いてください：
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScEVdW2UyVRsUVZujc6VX1dMWQKcCkhNd6_gPwmoF8bpRy9bA/viewform?usp=header" target="_blank" rel="noopener">お問い合わせフォーム</a>
-      </p>
-
-      <footer>&copy; 2025 あなたの会社/個人名</footer>
-    </div>
-  </div>
+  <footer>
+    &copy; 2025 ray00bay
+  </footer>
 </body>
 </html>
